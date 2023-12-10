@@ -1,5 +1,5 @@
 
-import './App.css';
+import './App.scss';
 import {Route, Routes} from "react-router-dom";
 import Home from "./pages/Home"; 
 import About from './pages/About';
@@ -12,7 +12,7 @@ function App() {
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="/fiche" element={<Fiche />} />
-    <Route path="/404" element={<NotFound />} />
+    <Route path="*" element={<NotFound />} />
   </Routes>
 }
 

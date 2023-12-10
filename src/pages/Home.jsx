@@ -1,5 +1,7 @@
+import Gallery from "../components/Gallery"
+
 function Home() {
-    return <h1>Home</h1>
+    return <Gallery/>
 }
 
 export default Home
