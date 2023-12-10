@@ -7,7 +7,7 @@ function Card({id, title, cover}) {
         <div className="card_container">
         <Link to={id}>
             <img src={cover} alt={title}/>
-            <h2>{title}</h2>
+            <h4>{title}</h4>
         </Link>
         </div> 
     );
