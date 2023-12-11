@@ -1,6 +1,7 @@
 import { useParams, Navigate } from "react-router-dom";
 import datas from "../logements.json";
 import Carrousel from "../components/Carrousel";
+import Collapse from "../components/Collapse";
 
 function Fiche() {
   const { id } = useParams();
@@ -29,6 +30,7 @@ function Fiche() {
           <h1>{location}</h1>
           <h1>{rating}</h1>
           <Carrousel data={pictures}/>
+          <Collapse titre={"Test"} contenu={"Test du contenu"}/>
       </div>
     </div>
   );
