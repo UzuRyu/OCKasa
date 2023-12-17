@@ -3,6 +3,9 @@ import datas from "../logements.json";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
 import NavBar from "../components/NavBar";
+import Stars from "../components/Stars";
+import Host from "../components/Host";
+import Footer from "../components/Footer";
 
 function Fiche() {
   const { id } = useParams();
@@ -10,7 +13,7 @@ function Fiche() {
   const data = datas.find((item) => item.id === id);
 
   if (!data) {
-    return <Navigate to="../*" replace={true} />;
+    return <Navigate to="../404" replace={false}/>
   }
 
   const {
@@ -35,14 +38,14 @@ function Fiche() {
               <h1 className="info_title">{title}</h1>
               <h2 className="info_location">{location}</h2>
               <div className="info_tags">
-                <p>Tags</p>
+                <ul>
+                  {tags.map((tag,i) => <li key={i}>{tag}</li> )}
+                </ul>
               </div>
             </div>
             <div className="info_host">
-              <p>Hôte</p>
-              <div className="RatingHost">
-                <p>✨✨✨✨✨</p>
-              </div>
+              <Host data={host}/>
+              <Stars rating={rating}/>
             </div>
             <div className="collapse_container">
               <div className="collapse_description">
@@ -53,6 +56,7 @@ function Fiche() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
