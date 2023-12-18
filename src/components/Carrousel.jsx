@@ -1,5 +1,8 @@
 import { useState } from "react"
 import "./Carrousel.scss"
+import Right from "../right.svg";
+import Left from "../left.svg";
+
 
 function Carrousel({ data }) {
     console.log(data);
@@ -16,17 +19,18 @@ function Carrousel({ data }) {
     }
 
     return (
-        <div className="">
+        <div className="carrousel_container">
             {data.length > 1 && (
                 <>
-                    <span className="" onClick={previous}>{"<"}</span>
-                    <span className="" onClick={next}>{">"}</span>
+                    <img className="carrousel_arrow carrousel_arrow_left" src={Left} onClick={previous}/>
+                    <img className="carrousel_arrow carrousel_arrow_right" src={Right} onClick={next}/>
                 </>
             )}
-            <div className="">
+            <div className="slider">
                 {data.map((picture, index) => {
                     return <img src={picture} alt={"Slide " + index} key={index} className={slide === index ? "slide" : "slide slide-hidden"}/>;
                 })}
+            <span className="slide_number">{slide + 1}/{data.length}</span>
             </div>
         </div>
     )

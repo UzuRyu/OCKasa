@@ -7,16 +7,19 @@ function Collapse({titre, contenu}) {
 
     const collapsing = () => {
         setOpen(!open);
-        console.log(contenu);
     }
 
     const isString = typeof contenu === 'string'
 
     return (
-        <div className="coll_container">
-            <h4 onClick={collapsing}>{titre}<img src={Arrow} className="arrow"/></h4>
-            {isString && <p className={open ? "coll_content" : "coll_centent coll_content-hidden" }>{contenu}</p>}
-            {!isString && <ul className={open ? "coll_content" : "coll_centent coll_content-hidden" }>{contenu.map((cont,i) => <li key={i}>{cont}</li> )}</ul>}
+        <div className={`coll_container ${open ? 'show' : ''}`}>
+            <h4 onClick={collapsing}>{titre}<img src={Arrow} className={`arrow ${open ? 'open' : ''}`}/></h4>
+            <div className="coll_content">
+                <div>
+            {isString && <p className="coll_text">{contenu}</p>}
+            {!isString && <ul className="coll_text">{contenu.map((cont,i) => <li key={i}>{cont}</li> )}</ul>}
+                </div>
+            </div>
         </div>
     )
 }
