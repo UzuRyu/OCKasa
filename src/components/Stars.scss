@@ -1,7 +1,23 @@
-.red{
-    color: red;
+.constel {
+    gap: 4px;
+    margin-top: 20px;
+    .fa-star {
+        font-size: 36px;
+    }
+
+    .red {
+        color: #FF6060;
+    }
+
+    .grey {
+        color: #E3E3E3;
+    }
 }
 
-.grey{
-    color: gray;
+@media (max-width: 600px) {
+    .constel {
+        .fa-star {
+            font-size: 18px;
+        }
+    }
 }

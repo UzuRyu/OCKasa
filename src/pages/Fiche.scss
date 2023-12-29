@@ -1,14 +1,20 @@
-.info_flex{
+.info_flex {
     display: flex;
     justify-content: space-between;
     margin: 0 5dvw;
-    .info_host{
+
+    .info_host {
+        display: flex;
         margin-block-start: 0.67em;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: flex-end;
     }
 }
 
 .info_localisation {
     color: #FF6060;
+
     .info_title {
         font-size: 36px;
         line-height: 51.34px;
@@ -20,35 +26,59 @@
         font-weight: 500;
     }
 
-    .info_tags{
+    .info_tags {
         display: flex;
         padding: 0;
         margin-block-start: 0em;
-    ul{
-        display: flex;
-        margin-block-start: 0em;
-        padding: 0;
-        flex-grow: 1;
-        align-items: center;
-        gap: 10px;
-     li {
-        background-color: #FF6060;
-        color: #FFFFFF;
-        padding: 0% 2%;
-        height: 25px;
-        border-radius: 10px;
-        text-align: center;
-        width: auto;
-        font-size: 15px;
-        display: flex;
-        align-items: center;
+
+        ul {
+            display: flex;
+            margin-block-start: 0em;
+            padding: 0;
+            flex-grow: 1;
+            align-items: center;
+            gap: 10px;
+
+            li {
+                background-color: #FF6060;
+                color: #FFFFFF;
+                padding: 0% 2%;
+                height: 25px;
+                border-radius: 10px;
+                text-align: center;
+                width: auto;
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+            }
+        }
     }
 }
-}
-}
 
-.collapse_description{
+.collapse_description {
     display: flex;
     gap: 76px;
     margin: 0 5dvw;
+}
+
+@media (max-width: 600px) {
+    .info_flex{
+        flex-direction: column;
+        .info_host{
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .host_container{
+                order: 2;
+            }
+            .constel{
+                order: 1;
+            }
+        }
+    }
+    .collapse_description{
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 10px;
+    }
 }
