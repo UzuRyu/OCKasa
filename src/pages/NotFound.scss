@@ -1,0 +1,52 @@
+.notfound_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 140px;
+    color: #FF6060;
+
+    .fourofour {
+        font-size: 288px;
+        font-weight: 700;
+        font-family: montserrat;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .message {
+        font-size: 36px;
+        text-align: center;
+        text-wrap:balance;
+
+    }
+
+
+    a {
+        all: unset;
+        font-size: 18px;
+        color: #FF6060;
+        text-decoration: underline;
+        margin-bottom: 140px;
+        word-wrap: normal;
+        
+    }
+}
+
+@media (max-width: 600px) {
+    .notfound_container {
+        gap: 113px;
+        .fourofour{
+            margin-top: 113px;
+            font-size: 96px;
+        }
+        .message{
+            font-size: 18px;
+        }
+
+        a {
+            font-size: 14px;
+            margin-bottom: 113px;
+        }
+    }
+}

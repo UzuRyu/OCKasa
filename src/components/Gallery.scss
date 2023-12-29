@@ -1,6 +1,7 @@
 .gallery_container {
     position: relative;
     gap: 40px;
+    padding: 40px 10px;
     margin-left: 5vw;
     margin-right: 5vw;
     display: grid;
@@ -8,8 +9,19 @@
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     z-index: 0;
-    padding-top: 3em;
-    padding-bottom: 3em;
     border-radius: 25px;
-    width: 90vw;
+}
+
+@media (max-width: 840px) {
+    .gallery_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery_container {
+        grid-template-columns: repeat(1, 1fr);
+        background-color: inherit;
+        padding: 0;
+    }
 }

@@ -1,0 +1,54 @@
+.info_flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5dvw;
+    .info_host{
+        margin-block-start: 0.67em;
+    }
+}
+
+.info_localisation {
+    color: #FF6060;
+    .info_title {
+        font-size: 36px;
+        line-height: 51.34px;
+        font-weight: 500;
+    }
+
+    .info_location {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .info_tags{
+        display: flex;
+        padding: 0;
+        margin-block-start: 0em;
+    ul{
+        display: flex;
+        margin-block-start: 0em;
+        padding: 0;
+        flex-grow: 1;
+        align-items: center;
+        gap: 10px;
+     li {
+        background-color: #FF6060;
+        color: #FFFFFF;
+        padding: 0% 2%;
+        height: 25px;
+        border-radius: 10px;
+        text-align: center;
+        width: auto;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+    }
+}
+}
+}
+
+.collapse_description{
+    display: flex;
+    gap: 76px;
+    margin: 0 5dvw;
+}

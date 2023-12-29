@@ -7,11 +7,13 @@ function Host({data}) {
     const last = data.name.slice(slicy + 1);
 
     return (
-        <>
-        <span className="host_firstname">{first}</span>
-        <span className="host_lastname">{last}</span>
-        <img className="host_pic" src={data.picture}/>
-        </>
+        <div className="host_container">
+            <div className="host_name">
+            <span className="host_firstname">{first}</span>
+            <span className="host_lastname">{last}</span>
+            </div>
+            <img className="host_pic" src={data.picture}/>
+        </div>
     )
 }
 

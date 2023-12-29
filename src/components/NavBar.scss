@@ -1,5 +1,38 @@
-.nav_global{
+.nav_global {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 45px;
+
+    nav {
+        display: flex;
+        gap: 10px;
+
+        a {
+            all: unset;
+            font-size: 24px;
+            color: #FF6060;
+        }
+
+        .sous {
+            text-decoration: underline;
+        }
+
+    }
+}
+
+@media (max-width: 600px) {
+    .nav_global {
+        .logo {
+            width: 145px;
+        }
+
+        nav {
+            a {
+                font-size: 12px;
+            }
+        }
+    }
 }

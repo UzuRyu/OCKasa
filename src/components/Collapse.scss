@@ -1,18 +1,16 @@
 .coll_container {
-    background-color: #FF6060;
     color: white;
-    margin-bottom: 2%;
-    width: 95%;
-    margin-left: 3%;
-    transition: all 3s ease;
+    width: 100%;
+    transition: all 0.3s ease;
     border-radius: 15px;
+    margin-bottom: 30px;
 
     .coll_content {
         display: grid;
         overflow: hidden;
         grid-template-rows: 0fr;
         background-color: #F6F6F6;
-        transition: grid-template-rows 3s;
+        transition: grid-template-rows 0.3s;
 
         div {
             overflow: hidden;
@@ -25,15 +23,14 @@
     }
 
     h4 {
-        align-items: center;
-        padding-left: 1%;
+        background-color: #FF6060;
         font-size: 16px;
         display: flex;
         justify-content: space-between;
-        margin: 5px;
         padding: 5px;
-        border-radius: 128%;
-        align-items: flex-end;
+        align-items: center;
+        border-radius: 5px;
+        margin: 0px;
     }
 
     .arrow {
@@ -42,16 +39,12 @@
 }
 
 .coll_container.show {
-    background-color: #FF6060;
-    color: white;
-    margin-bottom: 2%;
-    width: 95%;
-    margin-left: 3%;
-    transition: all 3s ease;
-
     .coll_content {
-        transition: grid-template-rows 3s;
+        transition: grid-template-rows 0.3s;
         grid-template-rows: 1fr;
+        position: relative;
+        top: -1px;
+        z-index: -1;
     }
 
     .arrow {

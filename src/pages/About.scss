@@ -1,0 +1,11 @@
+.AboutMain{
+    padding: 38px 10dvw 38px 10dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 600px) {
+    .AboutMain{
+    padding: 0 5dvw;
+    }
+}
