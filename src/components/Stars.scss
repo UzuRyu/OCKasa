@@ -1,22 +1,25 @@
+@import '../sass/main.scss';
+
 .constel {
     display: flex;
     flex-direction: row;
     gap: 4px;
     margin-top: 20px;
+
     .fa-star {
         font-size: 36px;
     }
 
     .red {
-        color: #FF6060;
+        color: $pink;
     }
 
     .grey {
-        color: #E3E3E3;
+        color: $grayStar;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: $mobile) {
     .constel {
         .fa-star {
             font-size: 18px;

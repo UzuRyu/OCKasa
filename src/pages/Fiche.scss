@@ -1,94 +1,104 @@
-.Fiche{
+@import '../sass/main.scss';
+
+.Fiche {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     gap: 50px;
-.info_flex {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 5dvw;
 
-    .info_host {
+    .info_flex {
         display: flex;
-        margin-block-start: 0.67em;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-start;
-    }
-}
+        justify-content: space-between;
+        margin: 0 5dvw;
 
-.info_localisation {
-    color: #FF6060;
-
-    .info_title {
-        font-size: 36px;
-        line-height: 51.34px;
-        font-weight: 500;
-    }
-
-    .info_location {
-        font-size: 18px;
-        font-weight: 500;
-    }
-
-    .info_tags {
-        display: flex;
-        padding: 0;
-        margin-block-start: 0em;
-
-        ul {
+        .info_host {
             display: flex;
-            margin-block-start: 0em;
+            margin-block-start: 0.67em;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-start;
+        }
+    }
+
+    .info_localisation {
+        color: $pink;
+
+        .info_title {
+            font-size: 36px;
+            line-height: 51.34px;
+            font-weight: 500;
+        }
+
+        .info_location {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .info_tags {
+            display: flex;
             padding: 0;
-            flex-grow: 1;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            li {
-                background-color: #FF6060;
-                color: #FFFFFF;
-                padding: 0 20px;
-                height: 25px;
-                border-radius: 20px;
-                text-align: center;
-                width: auto;
-                font-size: 15px;
+            margin-block-start: 0em;
+
+            ul {
                 display: flex;
+                margin-block-start: 0em;
+                padding: 0;
+                flex-grow: 1;
                 align-items: center;
-                justify-content: center;
-                min-width: 84px;
+                gap: 10px;
+                flex-wrap: wrap;
+
+                li {
+                    background-color: $pink;
+                    color: white;
+                    padding: 0 20px;
+                    height: 25px;
+                    border-radius: 20px;
+                    text-align: center;
+                    width: auto;
+                    font-size: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: 84px;
+                }
             }
         }
+    }
+
+    .collapse_description {
+        display: flex;
+        gap: 76px;
+        margin: 0 5dvw;
     }
 }
 
-.collapse_description {
-    display: flex;
-    gap: 76px;
-    margin: 0 5dvw;
-}
-}
-@media (max-width: 600px) {
-    .Fiche{
+@media (max-width: $mobile) {
+    .Fiche {
         gap: 27px;
-    .info_flex{
-        flex-direction: column;
-        .info_host{
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            .host_container{
-                order: 2;
-            }
-            .constel{
-                order: 1;
+
+        .info_flex {
+            flex-direction: column;
+
+            .info_host {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                .host_container {
+                    order: 2;
+                }
+
+                .constel {
+                    order: 1;
+                }
             }
         }
+
+        .collapse_description {
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 10px;
+        }
     }
-    .collapse_description{
-        flex-direction: column;
-        gap: 20px;
-        margin-top: 10px;
-    }
-}
 }

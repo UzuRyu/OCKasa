@@ -1,8 +1,11 @@
+@import '../sass/main.scss';
+
 .About {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     gap: 50px;
+
     .AboutMain {
         padding: 0 10vw;
         display: flex;
@@ -11,9 +14,10 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: $mobile) {
     .About {
         gap: 27px;
+
         .AboutMain {
             padding: 0 5vw;
         }

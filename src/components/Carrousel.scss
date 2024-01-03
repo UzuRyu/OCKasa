@@ -1,4 +1,6 @@
-.carrousel_container{
+@import '../sass/main.scss';
+
+.carrousel_container {
     display: flex;
     position: relative;
     margin-left: 5vw;
@@ -7,18 +9,21 @@
     height: 415px;
     width: 90vw;
 
-    .carrousel_arrow{
-        position: absolute; 
+    .carrousel_arrow {
+        position: absolute;
     }
-    .carrousel_arrow_left{
+
+    .carrousel_arrow_left {
         left: 20px;
         bottom: 40%;
     }
-    .carrousel_arrow_right{
+
+    .carrousel_arrow_right {
         right: 20px;
         bottom: 40%;
     }
-    .slide_number{
+
+    .slide_number {
         position: absolute;
         color: white;
         font-size: 18px;
@@ -27,27 +32,31 @@
         right: 49%;
         bottom: 1em;
     }
-    .slider img{
-        object-fit:cover;
+
+    .slider img {
+        object-fit: cover;
         border-radius: 15px;
         height: 100%;
         width: 90vw;
     }
-    .slide-hidden{
+
+    .slide-hidden {
         display: none;
     }
 }
 
 
-@media (max-width: 600px) {
-    .carrousel_container{
+@media (max-width: $mobile) {
+    .carrousel_container {
         height: 255px;
-    .slide_number{
-        opacity: 0;
+
+        .slide_number {
+            opacity: 0;
+        }
+
+        .carrousel_arrow {
+            height: 24px;
+            width: 24px;
+        }
     }
-    .carrousel_arrow{
-        height: 24px;
-        width: 24px;
-    }
-}
 }

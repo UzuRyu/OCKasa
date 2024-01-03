@@ -1,5 +1,5 @@
 import { useParams, Navigate } from "react-router-dom";
-import datas from "../logements.json";
+import datas from "../resources/logements.json";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
 import NavBar from "../components/NavBar";

@@ -1,3 +1,5 @@
+@import '../sass/main.scss';
+
 .gallery_container {
     position: relative;
     grid-gap: 50px 60px;
@@ -5,19 +7,19 @@
     margin-left: 5vw;
     margin-right: 5vw;
     display: grid;
-    background-color: #F6F6F6;
+    background-color: $gray;
     grid-template-columns: repeat(3, 1fr);
     z-index: 0;
     border-radius: 25px;
 }
 
-@media (max-width: 840px) {
+@media (max-width: $tablette) {
     .gallery_container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: $mobile) {
     .gallery_container {
         grid-template-columns: repeat(1, 1fr);
         background-color: inherit;

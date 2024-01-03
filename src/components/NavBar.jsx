@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import "./NavBar.scss"
-import Logo from '../KASA_LOGO.svg';
+import Logo from '../resources/logoKasa.svg';
 
 function NavBar() {
 
@@ -9,10 +9,10 @@ function NavBar() {
 
     return (
         <div className="nav_global">
-            <img src={Logo} alt="Logo" className="logo"/>
+            <img src={Logo} alt="Logo" className="logo" />
             <nav>
-            <Link to="/" className={path === '/' ? 'sous' : 'notsous'}>Accueil</Link>
-            <Link to="/About" className={path === '/About' ? 'sous' : 'notsous'}>À propos</Link>
+                <Link to="/" className={path === '/' ? 'sous' : 'notsous'}>Accueil</Link>
+                <Link to="/About" className={path === '/About' ? 'sous' : 'notsous'}>À propos</Link>
             </nav>
         </div>
     )

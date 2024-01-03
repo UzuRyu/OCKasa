@@ -1,6 +1,6 @@
 import "./Host.scss"
 
-function Host({data}) {
+function Host({ data }) {
 
     const slicy = data.name.indexOf(" ");
     const first = data.name.slice(0, slicy);
@@ -9,10 +9,10 @@ function Host({data}) {
     return (
         <div className="host_container">
             <div className="host_name">
-            <span className="host_firstname">{first}</span>
-            <span className="host_lastname">{last}</span>
+                <span className="host_firstname">{first}</span>
+                <span className="host_lastname">{last}</span>
             </div>
-            <img className="host_pic" src={data.picture}/>
+            <img className="host_pic" alt="Hôte" src={data.picture} />
         </div>
     )
 }

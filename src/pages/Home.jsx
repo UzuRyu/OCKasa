@@ -1,6 +1,6 @@
 import Gallery from "../components/Gallery";
 import Banner from "../components/Banner";
-import BannerImg from "../Image source 1.png"
+import BannerImg from "../resources/bannerHome.webp"
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import "./Home.scss"

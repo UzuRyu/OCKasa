@@ -1,10 +1,10 @@
+@import '../sass/main.scss';
+
 .nav_global {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 45px;
+    margin: 40px 5vw 0;
 
     nav {
         display: flex;
@@ -13,7 +13,7 @@
         a {
             all: unset;
             font-size: 24px;
-            color: #FF6060;
+            color: $pink;
         }
 
         .sous {
@@ -23,14 +23,17 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: $mobile) {
     .nav_global {
+        margin: 20px 5vw 0;
+
         .logo {
             width: 145px;
         }
 
         nav {
             gap: 26px;
+
             a {
                 font-size: 12px;
             }

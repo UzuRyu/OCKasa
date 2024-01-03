@@ -1,11 +1,13 @@
-.bannergallery_container{
+@import '../sass/main.scss';
+
+.bannergallery_container {
     display: flex;
     flex-direction: column;
     gap: 43px;
 }
 
-@media (max-width: 600px) {
-    .bannergallery_container{
+@media (max-width: $mobile) {
+    .bannergallery_container {
         gap: 22px;
     }
 }

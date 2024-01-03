@@ -1,4 +1,15 @@
-#root{
+// Media Queries
+
+$tablette : 850px;
+$mobile : 520px;
+
+// Colors
+
+$pink : #FF6060;
+$gray : #F6F6F6;
+$grayStar : #E3E3E3;
+
+#root {
     display: flex;
     flex-direction: column;
     font-weight: 500;
@@ -6,8 +17,8 @@
     gap: 50px;
 }
 
-@media (max-width: 600px) {
-    #root{
+@media (max-width: $mobile) {
+    #root {
         gap: 27px;
     }
 }

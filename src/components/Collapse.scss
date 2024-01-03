@@ -1,29 +1,32 @@
+@import '../sass/main.scss';
+
 .coll_container {
     color: white;
     transition: all 0.3s ease;
     border-radius: 15px;
     margin-bottom: 30px;
     width: 100%;
+
     .coll_content {
         display: grid;
         overflow: hidden;
         grid-template-rows: 0fr;
-        background-color: #F6F6F6;
+        background-color: $gray;
         transition: grid-template-rows 0.3s;
-        padding:0 20px;
+        padding: 0 20px;
 
         div {
             overflow: hidden;
-            background-color: #F6F6F6;
+            background-color: $gray;
 
             .coll_text {
-                color: #FF6060;
+                color: $pink;
             }
         }
     }
 
     h4 {
-        background-color: #FF6060;
+        background-color: $pink;
         font-size: 16px;
         display: flex;
         justify-content: space-between;
