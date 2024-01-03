@@ -6,6 +6,7 @@ import "./NotFound.scss"
 function NotFound() {
     return (
         <>
+            <div className="divfourofour">
             <NavBar />
             <div className="notfound_container">
                 <h1 className="fourofour">404</h1>
@@ -13,6 +14,7 @@ function NotFound() {
                 <Link to="/" className="link">Retourner sur la page d’accueil</Link>
             </div>
             <Footer />
+            </div>
         </>
     )
 }

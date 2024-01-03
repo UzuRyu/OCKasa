@@ -1,6 +1,8 @@
 @import '../sass/main.scss';
 
-#root {
+.divfourofour {
+    display: flex;
+    flex-direction: column;
     gap: 140px;
 
     .notfound_container {
@@ -26,6 +28,7 @@
             font-size: 36px;
             text-align: center;
             text-wrap: balance;
+            margin: 0 10vw;
 
         }
 
@@ -42,7 +45,7 @@
 }
 
 @media (max-width: $mobile) {
-    #root {
+    .divfourofour {
         gap: 113px;
 
         .notfound_container {
