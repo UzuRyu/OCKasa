@@ -30,10 +30,11 @@
         font-size: 16px;
         display: flex;
         justify-content: space-between;
-        padding: 5px;
+        padding: 10px 20px 10px 10px;
         align-items: center;
         border-radius: 5px;
         margin: 0px;
+        height: 32px;
     }
 
     .arrow {
@@ -52,5 +53,14 @@
 
     .arrow {
         transform: rotate(-180deg);
+    }
+}
+
+@media (max-width: $mobile) {
+    .coll_container {
+        h4 {
+            height: 10px;
+            padding: 10px 12px 10px 10px;
+        }
     }
 }
