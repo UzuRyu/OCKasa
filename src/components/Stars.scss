@@ -1,4 +1,6 @@
 .constel {
+    display: flex;
+    flex-direction: row;
     gap: 4px;
     margin-top: 20px;
     .fa-star {

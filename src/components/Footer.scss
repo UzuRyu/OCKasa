@@ -1,14 +1,15 @@
-.footer{
+.footer {
     background-color: black;
-    margin-top: 20px;
-    width: 100vw;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 66px 0 29px;
+    margin-top: auto;
+    gap: 26px;
 
-    .copyright{
+    .copyright {
         color: white;
+        margin: 0;
     }
 
     .logo_white {
@@ -17,8 +18,11 @@
 }
 
 @media (max-width: 600px) {
-    .copyright {
-        font-size: 12px;
-        width: 120px;
+    .footer {
+        padding: 66px 0 58px;
+        .copyright {
+            font-size: 12px;
+            width: 120px;
+        }
     }
 }

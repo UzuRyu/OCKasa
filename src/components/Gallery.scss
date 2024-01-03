@@ -1,13 +1,12 @@
 .gallery_container {
     position: relative;
-    gap: 40px;
-    padding: 40px 10px;
+    grid-gap: 50px 60px;
+    padding: 56px 50px 43px;
     margin-left: 5vw;
     margin-right: 5vw;
     display: grid;
     background-color: #F6F6F6;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
     z-index: 0;
     border-radius: 25px;
 }

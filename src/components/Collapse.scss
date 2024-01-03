@@ -1,16 +1,16 @@
 .coll_container {
     color: white;
-    width: 100%;
     transition: all 0.3s ease;
     border-radius: 15px;
     margin-bottom: 30px;
-
+    width: 100%;
     .coll_content {
         display: grid;
         overflow: hidden;
         grid-template-rows: 0fr;
         background-color: #F6F6F6;
         transition: grid-template-rows 0.3s;
+        padding:0 20px;
 
         div {
             overflow: hidden;

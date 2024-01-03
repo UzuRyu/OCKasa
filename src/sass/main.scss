@@ -3,7 +3,11 @@
     flex-direction: column;
     font-weight: 500;
     font-family: montserrat;
-    align-items: stretch;
-    width: 100dvw;
-    height: 100dvh;
+    gap: 50px;
+}
+
+@media (max-width: 600px) {
+    #root{
+        gap: 27px;
+    }
 }

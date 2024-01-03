@@ -1,11 +1,21 @@
-.AboutMain{
-    padding: 38px 10dvw 38px 10dvw;
+.About {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    min-height: 100vh;
+    gap: 50px;
+    .AboutMain {
+        padding: 0 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
 @media (max-width: 600px) {
-    .AboutMain{
-    padding: 0 5dvw;
+    .About {
+        gap: 27px;
+        .AboutMain {
+            padding: 0 5vw;
+        }
     }
 }
